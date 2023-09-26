@@ -17,30 +17,25 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             CartaoDeAniversarioTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("android")
+
                 }
             }
         }
     }
-}
 
+
+
+
+
+@Preview(showSystemUi = true)
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun TelaCartaoPresente (){
+
     Text(
-        text = "Hello $name!",
-        modifier = modifier
+        text = "Feliz aniversário do álbum 'Honeymoon'"
     )
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    CartaoDeAniversarioTheme {
-        Greeting("Alex")
-    }
+    Text(
+        text = "Para: LDR"
+    )
 }
